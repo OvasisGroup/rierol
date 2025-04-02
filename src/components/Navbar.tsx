@@ -28,42 +28,42 @@ useEffect(() => {
         <Link href="/" className="text-2xl font-bold text-black">
           <Image src='/images/rierol-logo.png' alt='logo' width={120} height={100} className='width={100} py-4' />
         </Link>
-        <div className="hidden md:flex space-x-6 justify-between items-center bg-white">
-          <Link href="/" className="text-primary">
+        <div className="hidden md:flex space-x-6 justify-between items-center">
+          <Link href="/" className="text-secondary">
             Home
           </Link>
-          <Link href="/about" className="text-primary">
+          <Link href="/about" className="text-secondary">
             About
           </Link>
-          <Link href="/services" className="text-primary">
+          <Link href="/services" className="text-secondary">
             Services
           </Link>
-          <Link href="/partners" className="text-primary">
+          <Link href="/partners" className="text-secondary">
             Partners
           </Link>
-          <Link href="/contacts" className="text-primary">
+          <Link href="/contacts" className="text-secondary">
             Contacts
           </Link>
         </div>
         <button className="md:hidden" onClick={() => setIsOpen(!isOpen)}>
-        <AlignJustify/>
+        <AlignJustify className='text-white'/>
         </button>
       </div>
       {isOpen && (
-        <div className="md:hidden flex flex-col space-y-4 border-b-4 border-secondary">
-           <Link href="/" className="text-primary border-b-1 pb-2">
+        <div className="md:hidden flex flex-col space-y-4 border-b-4 border-secondary text-white">
+           <Link href="/" className="text-white border-b-1 pb-2">
             Home
           </Link>
-          <Link href="/about" className="text-primary border-b-1 pb-2">
+          <Link href="/about" className="text-white border-b-1 pb-2">
             About
           </Link>
-          <Link href="/services" className="text-primary border-b-1 pb-2">
+          <Link href="/services" className="text-white border-b-1 pb-2">
             Services
           </Link>
-          <Link href="/partners" className="text-primary border-b-1 pb-2">
+          <Link href="/partners" className="text-white border-b-1 pb-2">
             Partners
           </Link>
-          <Link href="/contacts" className="text-primary border-b-1 pb-2">
+          <Link href="/contacts" className="text-white border-b-1 pb-2">
             Contacts
           </Link>
         </div>
