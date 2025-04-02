@@ -20,6 +20,12 @@ export default function About() {
                 <p className='mb-4'>We are committed to supporting each member of our firm and our clients, in an atmosphere of respect and trust. Our distinguishing feature is that we train the client on how to use the product and maintain the after sales services.</p>
             </div>
         </div>
+        <div className='bg-blue-200'>
+        <div className='container mx-auto py-10 md:px-0 px-6 grid md:grid-cols-3 gap-8'>
+            <div className=''>dfsdfs</div>
+            <div className='col-span-2'>sdsdg</div>
+        </div>
+        </div>
         <WhyUs/>
     </div>
   )
