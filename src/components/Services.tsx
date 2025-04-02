@@ -39,7 +39,7 @@ export default function Services() {
                 <div className='col-span-2'>
                     <div className='grid md:grid-cols-2 justify-start items-start gap-6'>
                         {WhyUsList.map((service) => (
-                            <Link key={service.id} href={'/'}>
+                            <Link key={service.id} href={`/services/${service.id}`}>
                                 <div className='h-75 shadow-none bg-blue-50 hover:bg-blue-500 rounded-2xl hover:text-white p-6 flex flex-col items-center justify-start'>
                                     <div className=' flex flex-col items-center justify-justify'>
                                         <Image src={service.image} width={80} height={60} alt="construction" className='my-4' />
