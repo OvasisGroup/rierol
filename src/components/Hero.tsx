@@ -3,7 +3,7 @@ import { Button } from './ui/button'
 
 export default function Hero() {
   return (
-    <div className='bg-[url("/images/Industrial-weighing-scale-scaled.jpg")] bg-cover bg-center h-screen bg-amber-700'>
+    <div className='bg-[url("/images/Industrial-weighing-scale-scaled.jpg")] bg-cover bg-center h-screen'>
       <div className='container mx-auto grid md:grid-cols-2 gap-6 py-10 md:px-0 px-6 h-full'>
         <div className='flex flex-col items-center justify-center h-full'>
           <p className='font-bold text-5xl text-white'>Weighing Systems, ICT, & Engineering Solutions Provider</p>
