@@ -21,9 +21,28 @@ export default function About() {
             </div>
         </div>
         <div className='bg-blue-200'>
-        <div className='container mx-auto py-10 md:px-0 px-6 grid md:grid-cols-3 gap-8'>
-            <div className=''>dfsdfs</div>
-            <div className='col-span-2'>sdsdg</div>
+        <div className='container mx-auto py-10 md:px-0 px-6 grid md:grid-cols-3 gap-12'>
+            <div className=''>
+            <h1 className='font-black text-primary text-xl mt-4'>Vision Statement</h1>
+            <p>To be the world’s most customer-centric company, that understands, satisfies their product and service needs.</p>
+
+            <h1 className='font-black text-primary text-xl mt-4'>Mission Statement</h1>
+            <p>We train our clients to success; continuously contribute towards enhancing their corporate value, customer development and human capital through innovation and practicability</p>
+            </div>
+            <div className='col-span-2'>
+                <h1 className='font-black text-2xl text-primary'>Culture &
+                Core Values</h1>
+                <p className='text-xl text-primary'>Our biggest priority as an international general trading organization as well as a business & financial consultant is to bring forth value to our clients in terms of negotiation, product quality and pricing. We believe that value creation is an essential part to client satisfaction and business success.</p>
+
+<p className='font-black text-primary text-xl mt-4'>Trustworthiness & Transparency</p>
+<p>Communicating honestly and creating relationships is a big part of who we are. We believe that trustworthiness and transparency are vital elements in retaining and creating successful future business relationships.
+
+<p className='font-black text-primary text-xl mt-4'>Integrity</p>
+We abide by the rules and regulations of business society. We believe that communicating ethically and morally towards our customers is essential to corporate growth and strength.
+
+<p className='font-black text-primary text-xl mt-4'>Innovation</p>
+Responding promptly with innovative solutions to different tasks is what sets us apart from our competitors. We believe that this helps us gain a fresh new perspective to problem solving.</p>
+            </div>
         </div>
         </div>
         <WhyUs/>
