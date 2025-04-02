@@ -1,6 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
 import { Settings } from 'lucide-react'
+import Image from 'next/image'
 
 const WhyUsList = [
     {
@@ -47,6 +48,8 @@ const WhyUsList = [
 
 export default function WhyUs() {
   return (
+    <>
+    <Image src="/images/forklift.jpg" alt="logo" width={12000} height={100} className='w-full' />
     <div className='bg-blue-100 pt-10'>
     <div className='container mx-auto py-10 md:px-0 px-6'>
         <div className=''>
@@ -72,5 +75,6 @@ various industries</p>
             </div>
         </div>
         </div>
+        </>
   )
 }
