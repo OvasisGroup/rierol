@@ -38,9 +38,6 @@ useEffect(() => {
           <Link href="/services" className="text-secondary">
             Services
           </Link>
-          <Link href="/partners" className="text-secondary">
-            Partners
-          </Link>
           <Link href="/contacts" className="text-secondary">
             Contacts
           </Link>
@@ -59,9 +56,6 @@ useEffect(() => {
           </Link>
           <Link href="/services" className="text-white border-b-1 pb-2">
             Services
-          </Link>
-          <Link href="/partners" className="text-white border-b-1 pb-2">
-            Partners
           </Link>
           <Link href="/contacts" className="text-white border-b-1 pb-2">
             Contacts
