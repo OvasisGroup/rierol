@@ -1,7 +1,8 @@
 import React from 'react'
 import Link from 'next/link'
+import { Settings } from 'lucide-react'
 
-const ServicesList = [
+const WhyUsList = [
     {
         id: 1,
         title: "Comprehensive consultation",
@@ -28,17 +29,17 @@ const ServicesList = [
         body: "Our team of professionals boasts of timely & efficient provision of technical support and after-sales service."
     },
     {
-        id: 1,
+        id: 6,
         title: "Competitive Pricing",
         body: "We offer cost-effective solutions without compromising quality."
     },
     {
-        id: 1,
+        id: 7,
         title: "10+ years of Experience",
         body: "We have gained mastery of our services over the years and only keep striving to deliver excellence to our customers."
     },
     {
-        id: 1,
+        id: 8,
         title: "Drive for innovation & growth",
         body: "We never stop learning and exploring new ways of bringing the best products & services to your business."
     },
@@ -46,28 +47,30 @@ const ServicesList = [
 
 export default function WhyUs() {
   return (
+    <div className='bg-blue-100 pt-10'>
     <div className='container mx-auto py-10 md:px-0 px-6'>
-        <div className='border-l-4 border-secondary pl-6'>
-            <h1 className='md:text-4xl text-3xl font-bold text-primary'>Products & Services Offering</h1>
-        <p className='font-thin text-3xl mt-4 text-black opacity-70'>Beyond Matrix Ltd is a highly diversified and integrated company providing specialised solutions in: Construction, Engineering & ICT infrastructure</p>
+        <div className=''>
+            <h1 className='md:text-4xl text-3xl font-bold text-primary text-center'>Why Choose Us?</h1>
+        <p className='font-thin text-3xl mt-4 text-black opacity-70 text-center max-w-200 mx-auto'>With a commitment to quality,
+efficiency, and innovation, we provide top-tier products and services to meet the needs of
+various industries</p>
         </div>
         <div className='my-10'>
             <div className='grid md:grid-cols-4 justify-start items-start gap-6'>
-            
-                {ServicesList.map((service) => (
-                    <Link key={service.id} href={`/services/${service.id}`}>
-                    <div className='h-55 shadow-none bg-blue-50 hover:bg-primary rounded-2xl hover:text-white p-6 flex flex-col items-start justify-start'>
-                        <div className=''>
-                            <h3 className='font-bold text-2xl'>{service.title}</h3>
-                            <p className='text-sm mt-4 hover:text-white'>{service.body}</p>
+                {WhyUsList.map((service) => (
+                    <Link key={service.id} href={'/'}>
+                    <div className='h-75 shadow-none bg-blue-50 hover:bg-primary rounded-2xl hover:text-white p-10 flex flex-col items-center justify-start'>
+                        <div className=' flex flex-col items-center justify-justify'>
+                            <Settings size={40} className='my-4'/>
+                            <h3 className='font-bold text-2xl text-center'>{service.title}</h3>
+                            <p className='text-sm mt-4 hover:text-white text-center'>{service.body}</p>
                         </div>
                     </div>
                     </Link>
                 ))}
-                
-                <div className='h-55 shadow-none bg-[url("/construction-works.jpg")] bg-cover bg-center rounded-2xl'></div>
             </div>
             </div>
+        </div>
         </div>
   )
 }
